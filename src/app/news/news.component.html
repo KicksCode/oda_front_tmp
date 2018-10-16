@@ -1,0 +1,35 @@
+<!-- Container (Portfolio Section) -->
+<div id="inTheNews" class="container-fluid text-center bg-grey">
+  <h1>{{title}}</h1>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li *ngIf="showThirdLink" data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4><a href="{{link1}}" target="_blank">{{text1}}</a><br><span>{{src1}}</span></h4>
+      </div>
+      <div class="item ">
+        <h4><a href="{{link2}}" target="_blank">{{text2}}</a><br><span>{{src2}}</span></h4>
+      </div>
+      <div class="item" *ngIf="showThirdLink">
+        <h4><a href="{{link3}}" target="_blank">{{text3}}</a><br><span>{{src3}}</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" style="margin-left: -70px;" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" style="margin-right: -50px;" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

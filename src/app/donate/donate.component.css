@@ -1,0 +1,26 @@
+.donate-buttons{
+    background-color: #4f5b66;
+    border-color: #4f5b66;
+    padding: 10px 16px;
+    font-size: 30px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/oda-front-tmp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

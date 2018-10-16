@@ -1,0 +1,66 @@
+<div id="donate" class="container-fluid text-center">
+  <h1>{{title}}</h1><br>
+  <h4>{{desc2}}</h4>
+  <br>
+  <div class="col-sm-12">
+    <div class="col-sm-4 text-center">
+        <button type="button" data-toggle="modal" data-target="#donateModal"  class=" btn btn-primary donate-buttons btn-lg">{{buttonDonate}} <span class="glyphicon glyphicon-heart-empty"></span>
+        </button>
+    </div>
+    <div class="col-sm-4 text-center">
+      <button type="button" data-toggle="modal" data-target="#volunteerModal"  class=" btn btn-primary donate-buttons btn-lg">{{buttonVolunteer}} <span class="glyphicon glyphicon-link"></span></button>
+    </div>
+    <div class="col-sm-4 text-center">
+      <button type="button" data-toggle="modal" data-target="#shareModal" class=" btn btn-primary donate-buttons btn-lg">{{buttonShare}}
+        <span class="glyphicon glyphicon-thumbs-up"></span></button>
+      </div>
+      <div class="modal fade" style="margin-top: 200px;" id="shareModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">{{modalTitleShare}}</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FOtrosDreams&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId"
+                width="250px" height="130px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" style="margin-top: 200px;" id="volunteerModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{modalTitleVolunteer}}</h4>
+              </div>
+              <div class="modal-body">
+              <p>{{mdalMsgVolunteer}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="donateModal" role="dialog">
+            <div class="modal-dialog modal-sm" style="margin-top: 200px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">{{modalTitleDonate}}</h4>
+                </div>
+                <div class="modal-body">
+                <p>{{mdalMsgDonate}}</p>
+                <a href="https://www.paypal.me/odamexico" target="_blank"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" alt="PayPal" /></a>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+  </div>
+
+</div>

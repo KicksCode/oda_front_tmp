@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'oda-front-tmp';
+  title = 'Otros Dreams en Accion';
+
+  public testWord = "Enrique"; 
+
 }
